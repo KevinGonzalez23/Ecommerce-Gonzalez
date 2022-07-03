@@ -1,4 +1,4 @@
-import Header from "./Header.js"
+import Header from "../components/Header.js"
 import ItemListContainer from "../components/ItemListContainer.js"
 
 
@@ -6,7 +6,7 @@ const App = () => {
     return (
       <>
         <Header/>
-        <ItemListContainer saludo='Hola Coders!!' />
+        <ItemListContainer/>
       </>  
     )
   }
