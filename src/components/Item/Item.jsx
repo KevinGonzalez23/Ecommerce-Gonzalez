@@ -1,5 +1,5 @@
 //aca van los productos
-import JordanBlue from "../Img/jordan1.jpg"
+import JordanBlue from "./Img/jordan1.jpg"
 
 const Item = () => {
     return (
