@@ -2,15 +2,18 @@ import { useEffect, useState } from "react"
 import React from 'react'
 import Producto from "../Item/Item"
 
+
 const productosDeBaseDeDatos = [
     {
       id: 1,
       nombre: "Jordan 1 Blue",
-      precio: 100
+      description: "",
+      precio: 100,
     },
     {
       id: 2,
       nombre: "Jordan 1 retro",
+      description: "",
       precio: 200
     },
     {
