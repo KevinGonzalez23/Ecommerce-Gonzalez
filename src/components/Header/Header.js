@@ -1,6 +1,6 @@
 import Nav from "./NavBar/NavBar"
 import Logo from "./Logo/sabertooth.png"
-
+import './header.css'
 const Header = () => {
    return (
       <header className="header">

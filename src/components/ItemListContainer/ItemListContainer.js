@@ -1,20 +1,36 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { dataBase } from "../../helpers/dBase"
 import ItemList from "../ItemList/ItemList"
+import "./ItemListContainer.css"
 
-const ItemListContainer = ({greeting}) => {
-  
+const ItemListContainer = () => {
+  const [productos, setProductos] = useState([])
+  const [loading, setLoading] = useState (true)
+
+  useEffect(() => {
+    dataBase//simular llamado una api, tambien cambia el estado de productos q empieza en vacio y termina con los productos
+    .then(resp => setProductos(resp))
+    .catch(err => console.log(err))
+    .finally(() => setLoading(false))
+  }, [])
+
+  console.log(productos)
+
   return (
-    <>
-
-      {greeting} 
-      <ItemList/>
-    </>
+    <section>
+      {loading ? <div id="loader-out">
+                  <div id="loader-container">
+                    <p id="loading-text">Cargando</p>
+                  </div>
+                </div> : 
+                        <ItemList producto={productos}/> }
+    </section>
   )
 }
 
 export default ItemListContainer
 
-{/*  {count}  */}
+/*  {count}  */
 
 
 
