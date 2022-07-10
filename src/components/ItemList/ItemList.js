@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import React from 'react'
-import Producto from "../Item/Item"
+import Item from "../Item/Item"
 
 
 function ItemList({producto}) {
@@ -9,7 +9,7 @@ function ItemList({producto}) {
     <>
         { producto.map((prod)=>{
           //console.log(producto,indice)
-          return <Producto  Items= {prod} key={prod.id} /> 
+          return <Item  Items= {prod} key={prod.id} /> 
         })}
     </>
   )

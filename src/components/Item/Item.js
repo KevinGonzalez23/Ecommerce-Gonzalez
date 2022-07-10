@@ -1,9 +1,9 @@
 //aca van los productos
 import React from "react";
-import "./products.css";
+import "./Item.css";
 
 const Item = ({Items}) => {
-    const { nombre, description, precio, img} = Items;
+    const { nombre, precio, img} = Items;
     return (
        
             <div className="product">
@@ -12,9 +12,9 @@ const Item = ({Items}) => {
                     <h3 className="product-title"> {nombre}</h3>
                 </div>
                 
-                <div className="product-description">
+                <div className="product-price">
                     <h3 className="product-price"> {precio}</h3>
-                    <h4> {description}</h4>
+                    
                     <a href="#" className="btn btn-primary">Ver mas</a>
                 </div>
             </div>

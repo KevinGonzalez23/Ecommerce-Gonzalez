@@ -51,17 +51,16 @@ section {
 
 }
 
-.product-description {
+.product-price {
     position: absolute;
     right: 32px;
     bottom: 48px;
     left: 32px;
     text-align: center;
     color: #ffffff;
-    font-size: 0.75rem;
     opacity: 0;
-    margin-top: 1rem;
 }
+
 
 .product:hover .product-img {
     transform: translateY(-48px);
@@ -71,6 +70,6 @@ section {
     transform: translate(-16px, -42px) rotate(-20deg) scale(1.4);
 }
 
-.product:hover .product-description {
+.product:hover .product-price {
     opacity: 1;
 }
