@@ -1,29 +1,85 @@
 import Jordan from '../Img/jordan1.png'
 import Vans from '../Img/vans.png'
 import Adidas from '../Img/adidas.png'
+import RemeraA from '../Img/RemeraAdidas.png'
+import Pantalon from  '../Img/pantalon.png'
 
 const productosDeBaseDeDatos = [
     {
       id: 1,
+      categoria: "Remeras",
+      nombre: "Adidas",
+      description: "fasf",
+      precio: "$" + 300,
+      img: RemeraA
+    },
+    {
+      id: 2,
+      categoria: "Remeras",
+      nombre: "Adidas",
+      description: "fasf",
+      precio: "$" + 300,
+      img: RemeraA
+    },
+    {
+      id: 3,
+      categoria: "Remeras",
+      nombre: "Adidas",
+      description: "fasf",
+      precio: "$" + 300,
+      img: RemeraA
+    },
+    {
+      id: 4,
+      categoria: "Pantalones",
+      nombre: "Adidas",
+      description: "fasf",
+      precio: "$" + 300,
+      img: Pantalon
+    },
+    {
+      id: 5,
+      categoria: "Pantalones",
+      nombre: "Adidas",
+      description: "fasf",
+      precio: "$" + 300,
+      img: Pantalon
+    },
+    {
+      id: 6,
+      categoria: "Pantalones",
+      nombre: "Adidas",
+      description: "fasf",
+      precio: "$" + 300,
+      img: Pantalon
+    },
+    {
+      id: 7,
+      categoria: "Zapatillas",
+
       nombre: "Jordan 1 Blue",
       description: "lala",
       precio: "$" + 100,
       img: Jordan
     },
     {
-      id: 2,
+      id: 8,
+      categoria: "Zapatillas",
+
       nombre: "Vans",
       description: "saldlasd",
       precio: "$" + 200,
       img: Vans
     },
     {
-      id: 3,
+      id: 9,
+      categoria: "Zapatillas",
+
       nombre: "Adidas",
       description: "fasf",
       precio: "$" + 300,
       img: Adidas
-    }
+    },
 ]
 
 export const dataBase = new Promise((resolve, reject) => {

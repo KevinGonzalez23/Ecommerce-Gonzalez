@@ -1,29 +1,42 @@
-import React, { useEffect, useState } from 'react'
-import { gFetchProductos } from "../../helpers/dBase"
-import ItemDetail from '../ItemDetail/ItemDetail';
-import ItemList from '../ItemList/ItemList';
-
+import React, { useEffect ,useState } from 'react'
+import { useParams } from 'react-router-dom'
+import ItemDetail from '../ItemDetail/ItemDetail'
+import { dataBase } from '../../helpers/dBase'
 
 
 function ItemDetailContainer() {
-  const [productos, setProductos] = useState([])
+  const [productoDetail, setProductosDetail] = useState([])
   const [loading, setLoading] = useState (true)
+  const { id } = useParams();
+  
 
+  useEffect(() => {
+    if (id) {
+      dataBase//simular llamado una api, tambien cambia el estado de productos q empieza en vacio y termina con los productos
+      .then(resp => setProductosDetail(resp.find( prod => prod.id === Number(id))))
+      .catch(err => console.log(err))
+      .finally(() => setLoading(false))
+    } else {
+      dataBase//simular llamado una api, tambien cambia el estado de productos q empieza en vacio y termina con los productos
+      .then(resp => setProductosDetail(resp))
+      .catch(err => console.log(err))
+      .finally(() => setLoading(false))
+    }
+  }, [id])
+  
+  /* products.find((product) => product.id === id) */
 
- //Quise filtrar por id 
-  /* useEffect(() => {
-    gFetchProductos
-      .then((resp) => {
-        setProductos(resp.filter((item) => item.id === id));
-      })
-      .catch((rej) => console.log(rej))
-      .finally(() => setLoading(false));
-  }, []); */
   return (
     <>
-      <ItemList Item= {productos}
+      {loading ? <div id="loader-out">
+                  <div id="loader-container">
+                    <p id="loading-text">Cargando</p>
+                  </div>
+                </div> : 
+                        <ItemDetail Item={productoDetail}/> }
     </>
   )
 }
+
 
 export default ItemDetailContainer

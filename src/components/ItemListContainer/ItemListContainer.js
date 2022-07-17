@@ -1,20 +1,29 @@
 import { useEffect, useState } from "react"
 import { dataBase } from "../../helpers/dBase"
+import { useParams } from 'react-router-dom'  
 import ItemList from "../ItemList/ItemList"
 import "./ItemListContainer.css"
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([])
   const [loading, setLoading] = useState (true)
+  const { categoriaId } = useParams()
 
   useEffect(() => {
-    dataBase//simular llamado una api, tambien cambia el estado de productos q empieza en vacio y termina con los productos
-    .then(resp => setProductos(resp))
-    .catch(err => console.log(err))
-    .finally(() => setLoading(false))
-  }, [])
+    if (categoriaId) {
+      dataBase//simular llamado una api, tambien cambia el estado de productos q empieza en vacio y termina con los productos
+      .then(resp => setProductos(resp.filter( prod => prod.categoria === categoriaId)))
+      .catch(err => console.log(err))
+      .finally(() => setLoading(false))
+    } else {
+      dataBase//simular llamado una api, tambien cambia el estado de productos q empieza en vacio y termina con los productos
+      .then(resp => setProductos(resp))
+      .catch(err => console.log(err))
+      .finally(() => setLoading(false))
+    }
+  }, [categoriaId])
 
-  console.log(productos)
+  console.log(categoriaId)
 
   return (
     <section>

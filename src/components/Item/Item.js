@@ -1,23 +1,25 @@
 //aca van los productos
 import React from "react";
 import "./Item.css";
+import {Link} from 'react-router-dom'
 
 const Item = ({Items}) => {
-    const { nombre, precio, img} = Items;
+    const {id, nombre, precio, img} = Items;
     return (
-       
+       <>
             <div className="product">
                 <div className="product-img">
-                    <img src={img} alt=""/>
+                    <Link to={`/detalle/${id}`}><img src={img} alt=""/></Link>
                     <h3 className="product-title"> {nombre}</h3>
                 </div>
                 
                 <div className="product-price">
                     <h3 className="product-price"> {precio}</h3>
-                    
-                    <a href="#" className="btn btn-primary">Ver mas</a>
+                   <Link to={`/detalle/${id}`}><button type="button" className="btn btn-dark">Ver Mas</button></Link> 
+                    {/* <a href="#" className="btn btn-primary">Ver mas</a> */}
                 </div>
             </div>
+       </>
         
     )
   }

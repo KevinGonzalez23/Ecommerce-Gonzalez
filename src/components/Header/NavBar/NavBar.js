@@ -1,5 +1,5 @@
 import CartWidget from "../CartWidget/CartWidget"
-
+import {NavLink ,Link} from 'react-router-dom' 
 
 const Nav = ( ) => {
      return (
@@ -10,12 +10,15 @@ const Nav = ( ) => {
                 </a>
 
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a className="dropdown-item" href="#">Remeras</a></li>
-                    <li><a className="dropdown-item" href="#">Pantalones</a></li>
-                    <li><a className="dropdown-item" href="#">Camperas</a></li>
+                    <li className="dropdown-item"><NavLink to='/categoria/Remeras' className={({isActive}) => isActive ? 'unaClase' : 'otraClase'}> Remeras </NavLink> </li>
+                    <li className="dropdown-item"><NavLink to='/categoria/Pantalones' className={({isActive}) => isActive ? 'unaClase' : 'otraClase'}> Pantalones </NavLink></li>
+                    <li className="dropdown-item"><NavLink to='/categoria/Zapatillas' className={({isActive}) => isActive ? 'unaClase' : 'otraClase'}> Zapatillas </NavLink></li>
                 </ul>
             </div>
-            <a href="#" className="nav__link"><CartWidget/></a>
+            <Link to='/carrito'>
+                <a href="#" className="nav__link"><CartWidget/></a>
+            </Link>
+            
             <a href="#" className="nav__link">Login</a>  
             
         </nav>
