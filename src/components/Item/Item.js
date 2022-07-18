@@ -16,7 +16,7 @@ const Item = ({Items}) => {
                 <div className="product-price">
                     <h3 className="product-price"> {precio}</h3>
                    <Link to={`/detalle/${id}`}><button type="button" className="btn btn-dark">Ver Mas</button></Link> 
-                    {/* <a href="#" className="btn btn-primary">Ver mas</a> */}
+                    
                 </div>
             </div>
        </>

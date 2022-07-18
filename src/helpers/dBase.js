@@ -1,33 +1,36 @@
-import Jordan from '../Img/jordan1.png'
-import Vans from '../Img/vans.png'
-import Adidas from '../Img/adidas.png'
-import RemeraA from '../Img/RemeraAdidas.png'
-import Pantalon from  '../Img/pantalon.png'
+import Nike1 from '../Img/Zapatillas/ZapatillasNike.png'
+import Nike2 from '../Img/Zapatillas/ZapatillasNike2.png'
+import Nike3 from '../Img/Zapatillas/ZapatillasNike3.png'
+import Adidas from '../Img/Zapatillas/adidas.png'
+import RemeraPuma from '../Img/Remeras/RemeraPuma.png'
+import RemeraNike from '../Img/Remeras/RemeraNike.png'
+import RemeraAdidas from '../Img/Remeras/RemeraAdidas.png'
+
 
 const productosDeBaseDeDatos = [
     {
       id: 1,
       categoria: "Remeras",
-      nombre: "Adidas",
-      description: "fasf",
+      nombre: "Remera Puma Classics Boxy Hombre",
+      description: "Indumentaria Remera Puma Classics Boxy de Lifestyle para Hombre",
       precio: "$" + 300,
-      img: RemeraA
+      img: RemeraPuma
     },
     {
       id: 2,
       categoria: "Remeras",
-      nombre: "Adidas",
-      description: "fasf",
+      nombre: "REMERA NSP TOP SS MESH NIKE",
+      description: "Remera mangas cortas para adultos Nike Sportwear NSP Top SS Mesh",
       precio: "$" + 300,
-      img: RemeraA
+      img: RemeraNike
     },
     {
       id: 3,
       categoria: "Remeras",
-      nombre: "Adidas",
-      description: "fasf",
+      nombre: "REMERA ADIDAS SPORTSWEAR FUTURE ICONS",
+      description: "Remera mangas cortas para adultos Adidas Sportwear Future Icons",
       precio: "$" + 300,
-      img: RemeraA
+      img: RemeraAdidas
     },
     {
       id: 4,
@@ -35,7 +38,7 @@ const productosDeBaseDeDatos = [
       nombre: "Adidas",
       description: "fasf",
       precio: "$" + 300,
-      img: Pantalon
+      img: RemeraAdidas
     },
     {
       id: 5,
@@ -43,7 +46,7 @@ const productosDeBaseDeDatos = [
       nombre: "Adidas",
       description: "fasf",
       precio: "$" + 300,
-      img: Pantalon
+      img: RemeraAdidas
     },
     {
       id: 6,
@@ -51,34 +54,31 @@ const productosDeBaseDeDatos = [
       nombre: "Adidas",
       description: "fasf",
       precio: "$" + 300,
-      img: Pantalon
+      img: RemeraAdidas
     },
     {
       id: 7,
       categoria: "Zapatillas",
-
-      nombre: "Jordan 1 Blue",
-      description: "lala",
+      nombre: "Nike Dunk High By You",
+      description: "Las Nike Dunk High By You ofrecen el increíble estilo de los 2000 con un toque futurista.La piel, el ante y el tejido Woven en colores llamativos y metalizados aportan una nueva vida a este básico deportivo con un tipo de letra de edición especial para añadir un toque de personalidad adicional.",
       precio: "$" + 100,
-      img: Jordan
+      img: Nike1
     },
     {
       id: 8,
       categoria: "Zapatillas",
-
-      nombre: "Vans",
-      description: "saldlasd",
+      nombre: "Nike Dunk High By You",
+      description: "Las Nike Dunk High By You ofrecen el increíble estilo de los 2000 con un toque futurista.La piel, el ante y el tejido Woven en colores llamativos y metalizados aportan una nueva vida a este básico deportivo con un tipo de letra de edición especial para añadir un toque de personalidad adicional.",
       precio: "$" + 200,
-      img: Vans
+      img: Nike2
     },
     {
       id: 9,
       categoria: "Zapatillas",
-
-      nombre: "Adidas",
-      description: "fasf",
+      nombre: "Nike Dunk High By You",
+      description: "Las Nike Dunk High By You ofrecen el increíble estilo de los 2000 con un toque futurista.La piel, el ante y el tejido Woven en colores llamativos y metalizados aportan una nueva vida a este básico deportivo con un tipo de letra de edición especial para añadir un toque de personalidad adicional.",
       precio: "$" + 300,
-      img: Adidas
+      img: Nike3
     },
 ]
 

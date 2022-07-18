@@ -11,7 +11,7 @@ const Nav = ( ) => {
 
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li className="dropdown-item"><NavLink to='/categoria/Remeras' className={({isActive}) => isActive ? 'unaClase' : 'otraClase'}> Remeras </NavLink> </li>
-                    <li className="dropdown-item"><NavLink to='/categoria/Pantalones' className={({isActive}) => isActive ? 'unaClase' : 'otraClase'}> Pantalones </NavLink></li>
+                    {/* <li className="dropdown-item"><NavLink to='/categoria/Pantalones' className={({isActive}) => isActive ? 'unaClase' : 'otraClase'}> Pantalones </NavLink></li> */}
                     <li className="dropdown-item"><NavLink to='/categoria/Zapatillas' className={({isActive}) => isActive ? 'unaClase' : 'otraClase'}> Zapatillas </NavLink></li>
                 </ul>
             </div>
