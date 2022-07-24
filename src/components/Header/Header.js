@@ -5,15 +5,17 @@ import {NavLink} from 'react-router-dom'
 
 const Header = () => {
    return (
+      <>
       <header className="header">
          <NavLink to='/'>
             <div className="header__logo">
-               <a href="#"><img src={Logo} /></a>
-               <a href="#"><h1>Ice-Sabertooth</h1></a>
+               <img src={Logo} />
+               <h1>Ice-Sabertooth</h1>
             </div>
          </NavLink>
          <Nav/>
       </header>
+      </>
     )
 }
 

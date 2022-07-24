@@ -23,10 +23,10 @@ const ItemListContainer = () => {
     }
   }, [categoriaId])
 
-  console.log(categoriaId)
+  //console.log(categoriaId)
 
   return (
-    <section>
+    <section className="ItemListContainer">
       {loading ? <div id="loader-out">
                   <div id="loader-container">
                     <p id="loading-text">Cargando</p>

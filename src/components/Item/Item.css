@@ -6,11 +6,12 @@ body {
     font-family: "Lato";
 }
 
-section {
+.ItemListContainer {
     margin: 2rem;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 .product {
     width: 100%;

@@ -7,8 +7,7 @@
 #root > main, #root > header , #root > footer{
     padding: 1rem;
 }
-
-#root > main{
+#root > main {
     flex-grow: 1;
 }
 

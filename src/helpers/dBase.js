@@ -1,7 +1,6 @@
 import Nike1 from '../Img/Zapatillas/ZapatillasNike.png'
 import Nike2 from '../Img/Zapatillas/ZapatillasNike2.png'
 import Nike3 from '../Img/Zapatillas/ZapatillasNike3.png'
-import Adidas from '../Img/Zapatillas/adidas.png'
 import RemeraPuma from '../Img/Remeras/RemeraPuma.png'
 import RemeraNike from '../Img/Remeras/RemeraNike.png'
 import RemeraAdidas from '../Img/Remeras/RemeraAdidas.png'
